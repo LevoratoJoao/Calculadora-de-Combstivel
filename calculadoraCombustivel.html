@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Calculadora de Combustivel</title>
+    <link rel="stylesheet" type="text/css" href="calculadoraCombustivel.css"/>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="calculaCombustivel.js"></script>
+</head>
+<body>
+    <div id="pagina-inicial">
+        <h1>Cálculo de Combustível<img id="logo" src="https://seeklogo.com/images/U/utfpr-universidade-tecnologica-federal-do-parana-logo-6CF2B55F31-seeklogo.com.png"></h1>
+        <div id="form-elementos">
+            <label for="txtVelocidade">Velocidade: </label>
+            <input id="txtVelocidade">
+            <div class="units">km/h</div>
+            <label for="txtTempo">Tempo: </label>
+            <input id="txtTempo">
+            <div class="units">min.</div>
+            <label for="txtRendimento">Rendimento: </label>
+            <input id="txtRendimento">
+            <div class="units">km/l</div>
+            <!--<div id="button-resultado">-->
+                <button onClick='calculaLitros()'>Calcular</button>
+            <!--</div>-->
+            <div class="conteudo" id="txtResultado"></div>
+        </div>
+    </div>
+</body>
+</html>
